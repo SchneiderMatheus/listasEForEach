@@ -8,6 +8,8 @@ public class App {
         Scanner sc = new Scanner(System.in);
         List <String>list = new ArrayList<>();
         Locale.setDefault(Locale.US);
+        
 
+        sc.close();
     }
 }
