@@ -9,13 +9,17 @@ public class App {
         List <Integer>list = new ArrayList<>();
         Locale.setDefault(Locale.US);
 
+        int soma = 0;
+
         for(int i = 0; i<5; i++){
             System.out.println("Adicione um número inteiro: ");
             int escolha = sc.nextInt();
+            soma += escolha;
             list.add(escolha);
         }
 
         System.out.println(list);
+        System.out.println("Soma = "+soma);
 
         sc.close();
     }
