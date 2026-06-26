@@ -8,14 +8,16 @@ public class App2 {
         
 
         List <String>list = new ArrayList<>();
+        
         for(int i = 0;i<6; i++){
             System.out.println("Adicione uma fruta: ");
             String fruta = sc.nextLine();
             list.add(fruta);
         }
-        System.out.println(list);
+        List<String> resultado = removerDuplicatas(list);
+        System.out.println(resultado);
 
         sc.close();
     }
-    
+
 }
